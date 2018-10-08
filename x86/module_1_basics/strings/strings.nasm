@@ -50,7 +50,7 @@ Copy:					; using movsb instruction to copy from esi to edi
 	lea esi, [source]		; address of source to be copied from loaded
 	lea edi, [destination]		; destination to be copied to 
 
-	cld				; clearing direction flag, so copying will only go one way, and resets that way each repeat instruction
+	cld				; clearing direction flag, so copying will only go one way
 	rep movsb			; this will keep on repeating movb until ecx counter reaches 0
 
 
